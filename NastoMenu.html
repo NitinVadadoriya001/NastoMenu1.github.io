@@ -275,6 +275,7 @@
   function decrement(val) {
     let r = document.getElementById(`r${val.substring(1, 4)}`);
     let value = r.innerHTML;
+      if(value != 0){
         r.innerHTML = value - 1;
         totaliteam -= 1;
         if(r == r4 || r == r6 || r == r10){
@@ -283,7 +284,7 @@
         else{
           totalmoney = totalmoney - 5;
         }
-
+      }
 }
 function showlist(){
     for(let i =0; i<= 11;i++){
